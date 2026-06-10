@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-zinc-500">
-          <p>Created by Daniel Andrushko</p>
+          <p>Created by Daniil Andruško</p>
           <p>© 2026</p>
         </div>
       </div>
