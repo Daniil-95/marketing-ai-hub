@@ -3,7 +3,7 @@ import { kpiData } from "@/data/dashboard-data";
 
 export default function KpiGrid() {
   return (
-    <section>
+    <section className="mb-12">
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {kpiData.map((item) => (
           <KpiCard
