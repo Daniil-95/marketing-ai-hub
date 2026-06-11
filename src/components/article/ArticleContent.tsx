@@ -11,7 +11,10 @@ export default function ArticleContent() {
         společnosti, ale stává se standardním nástrojem napříč obory.
       </p>
 
-      <h2 className="mt-12 text-3xl font-bold">
+      <h2
+        id="proc-ai"
+        className="mt-12 text-3xl font-bold scroll-mt-24"
+      >
         Proč firmy stále více využívají AI
       </h2>
 
@@ -29,11 +32,17 @@ export default function ArticleContent() {
         marketingové aktivity na konkrétní skupiny zákazníků.
       </p>
 
-      <h2 className="mt-12 text-3xl font-bold">
+      <h2
+        id="vyuziti-ai"
+        className="mt-12 text-3xl font-bold scroll-mt-24"
+      >
         Nejčastější využití AI v marketingu
       </h2>
 
-      <h3 className="mt-8 text-2xl font-semibold">
+      <h3
+        id="seo"
+        className="mt-8 text-2xl font-semibold"
+      >
         SEO optimalizace
       </h3>
 
@@ -44,7 +53,10 @@ export default function ArticleContent() {
         reagovat na změny ve vyhledávání.
       </p>
 
-      <h3 className="mt-8 text-2xl font-semibold">
+      <h3
+        id="ppc"
+        className="mt-8 text-2xl font-semibold"
+      >
         PPC kampaně
       </h3>
 
@@ -55,7 +67,10 @@ export default function ArticleContent() {
         lepších výsledků.
       </p>
 
-      <h3 className="mt-8 text-2xl font-semibold">
+      <h3
+        id="content"
+        className="mt-8 text-2xl font-semibold"
+      >
         Tvorba obsahu
       </h3>
 
@@ -65,17 +80,30 @@ export default function ArticleContent() {
         kontrola zůstává důležitá, ale celý proces je výrazně rychlejší.
       </p>
 
-      <h3 className="mt-8 text-2xl font-semibold">
+      <h3
+        id="analytics"
+        className="mt-8 text-2xl font-semibold"
+      >
         Analýza dat
       </h3>
 
       <p className="mt-4 leading-8 text-zinc-300">
         Marketingové týmy získávají přehlednější reporting a rychlejší
         identifikaci trendů. Díky tomu mohou efektivněji rozhodovat o
-        investicích do marketingových aktivit.
+        investicích do marketingových aktivit. Praktickou ukázku
+        vizualizace marketingových dat najdete v našem{" "}
+        <Link
+          href="/dashboard"
+          className="text-violet-400 hover:text-violet-300"
+        >
+          marketingovém dashboardu
+        </Link>.
       </p>
 
-      <h2 className="mt-12 text-3xl font-bold">
+      <h2
+        id="jak-zacit"
+        className="mt-12 text-3xl font-bold scroll-mt-24"
+      >
         Jak začít s AI ve firmě
       </h2>
 
@@ -90,7 +118,22 @@ export default function ArticleContent() {
         aby dokázal nové nástroje efektivně využívat.
       </p>
 
-      <h2 className="mt-12 text-3xl font-bold">
+      <p className="mt-4 leading-8 text-zinc-300">
+        Pokud chcete s AI začít ihned, vyzkoušejte náš{" "}
+        <Link
+          href="/ai-assistant"
+          className="text-violet-400 hover:text-violet-300"
+        >
+          AI Marketing Assistant
+        </Link>
+        , který pomáhá generovat SEO titulky, reklamní texty a další
+        marketingový obsah během několika sekund.
+      </p>
+
+      <h2
+        id="zaver"
+        className="mt-12 text-3xl font-bold scroll-mt-24"
+      >
         Závěr
       </h2>
 
