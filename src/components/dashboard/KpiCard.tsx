@@ -22,12 +22,13 @@ export default function KpiCard({
       </h3>
 
       <span
-        className={`mt-4 inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${
+        className={`mt-4 inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ${
           isPositive
             ? "bg-emerald-500/10 text-emerald-400"
             : "bg-red-500/10 text-red-400"
         }`}
       >
+        <span>{isPositive ? "↗" : "↘"}</span>
         {change}
       </span>
     </div>

@@ -1,8 +1,49 @@
+"use client";
+
+import { useState } from "react";
+
 import AssistantForm from "@/components/assistant/AssistantForm";
 import GeneratedContent from "@/components/assistant/GeneratedContent";
 import PromptPreview from "@/components/assistant/PromptPreview";
 
 export default function AssistantPage() {
+  const [generatedContent, setGeneratedContent] = useState("");
+  const [promptPreview, setPromptPreview] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const generateContent = async (
+    description: string,
+    outputType: string
+  ) => {
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          description,
+          outputType,
+        }),
+      });
+
+      const data = await response.json();
+
+      setGeneratedContent(data.result);
+      setPromptPreview(data.prompt);
+    } catch (error) {
+      console.error(error);
+
+      setGeneratedContent(
+        "Při generování obsahu došlo k chybě."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="mx-auto max-w-5xl py-12">
       <div className="mb-12">
@@ -21,11 +62,19 @@ export default function AssistantPage() {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
-        <AssistantForm />
+        <AssistantForm
+          onGenerate={generateContent}
+          loading={loading}
+        />
 
         <div className="space-y-6">
-          <GeneratedContent />
-          <PromptPreview />
+          <GeneratedContent
+            content={generatedContent}
+          />
+
+          <PromptPreview
+            prompt={promptPreview}
+          />
         </div>
       </div>
     </section>
