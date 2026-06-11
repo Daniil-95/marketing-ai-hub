@@ -93,4 +93,4 @@ Projekt je připraven pro nasazení na platformě Vercel.
 
 ## Autor
 
-Daniel Andrushko
+Daniil Andrushko
