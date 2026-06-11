@@ -38,11 +38,15 @@ export default function AssistantForm({
 
       <div className="space-y-5">
         <div>
-          <label className="mb-2 block text-sm font-medium">
+          <label
+            htmlFor="description"
+            className="mb-2 block text-sm font-medium"
+          >
             Popis firmy
           </label>
 
           <textarea
+            id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={6}
@@ -52,11 +56,15 @@ export default function AssistantForm({
         </div>
 
         <div>
-          <label className="mb-2 block text-sm font-medium">
+          <label
+            htmlFor="outputType"
+            className="mb-2 block text-sm font-medium"
+          >
             Typ výstupu
           </label>
 
           <select
+            id="outputType"
             value={outputType}
             onChange={(e) => setOutputType(e.target.value)}
             className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 outline-none transition focus:border-violet-500"
@@ -92,7 +100,7 @@ export default function AssistantForm({
           type="button"
           onClick={handleSubmit}
           disabled={loading}
-          className="w-full rounded-xl bg-violet-600 px-4 py-3 font-medium transition hover:bg-violet-500 disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full rounded-xl bg-violet-600 px-4 py-3 font-medium text-white transition hover:bg-violet-500 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {loading ? "Generuji..." : "Generovat"}
         </button>

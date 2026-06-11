@@ -7,14 +7,14 @@ import ResultsTable from "@/components/dashboard/ResultsTable";
 
 export default function DashboardPage() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-12">
+    <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
       <div className="mb-12 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <span className="inline-flex rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1 text-sm font-medium text-violet-300">
             Marketing Analytics
           </span>
 
-          <h1 className="mt-5 text-5xl font-bold tracking-tight">
+          <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
             Marketing Dashboard
           </h1>
 
@@ -25,7 +25,10 @@ export default function DashboardPage() {
         </div>
 
         <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-sm text-zinc-400">
-          Období: <span className="font-medium text-white">Leden – Červen 2026</span>
+          Období:{" "}
+          <span className="font-medium text-white">
+            Leden – Červen 2026
+          </span>
         </div>
       </div>
 

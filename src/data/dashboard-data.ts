@@ -1,4 +1,19 @@
-export const kpiData = [
+export type KpiItem = {
+  title: string;
+  value: string;
+  change: string;
+};
+
+export type ChartDataItem = {
+  month: string;
+  visits: number;
+  costs: number;
+  revenue: number;
+  conversions: number;
+  pno: number;
+};
+
+export const kpiData: KpiItem[] = [
   {
     title: "Návštěvy",
     value: "128 540",
@@ -26,7 +41,7 @@ export const kpiData = [
   },
 ];
 
-export const chartData = [
+export const chartData: ChartDataItem[] = [
   {
     month: "Leden",
     visits: 15000,

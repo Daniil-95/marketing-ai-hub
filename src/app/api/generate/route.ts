@@ -49,16 +49,30 @@ Requirements:
 
 export async function POST(request: Request) {
   try {
-    const { description, outputType } =
-      await request.json();
+    const {
+      description,
+      outputType,
+    }: {
+      description: string;
+      outputType: string;
+    } = await request.json();
+
+    if (!description?.trim()) {
+      return NextResponse.json(
+        {
+          error: "Description is required",
+        },
+        {
+          status: 400,
+        }
+      );
+    }
 
     const template =
       promptTemplates[outputType] ??
       promptTemplates["Facebook Post"];
 
     const prompt = `
-You are a senior digital marketing specialist.
-
 ${template}
 
 Business description:
@@ -70,11 +84,16 @@ ${description}
         model: "gpt-4.1-mini",
         messages: [
           {
+            role: "system",
+            content:
+              "You are a senior digital marketing specialist.",
+          },
+          {
             role: "user",
             content: prompt,
           },
         ],
-        temperature: 0.8,
+        temperature: 0.7,
       });
 
     const result =

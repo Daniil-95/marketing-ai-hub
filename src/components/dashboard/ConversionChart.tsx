@@ -14,12 +14,29 @@ import { chartData } from "@/data/dashboard-data";
 
 export default function ConversionChart() {
   return (
-    <ResponsiveContainer width="100%" height={300}>
+    <ResponsiveContainer
+      width="100%"
+      height={300}
+    >
       <AreaChart data={chartData}>
         <defs>
-          <linearGradient id="conversionGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.4} />
-            <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
+          <linearGradient
+            id="conversionGradient"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="1"
+          >
+            <stop
+              offset="5%"
+              stopColor="#8b5cf6"
+              stopOpacity={0.4}
+            />
+            <stop
+              offset="95%"
+              stopColor="#8b5cf6"
+              stopOpacity={0}
+            />
           </linearGradient>
         </defs>
 
@@ -39,6 +56,7 @@ export default function ConversionChart() {
           stroke="#a1a1aa"
           tickLine={false}
           axisLine={false}
+          width={40}
         />
 
         <Tooltip

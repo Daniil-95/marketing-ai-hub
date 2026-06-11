@@ -3,15 +3,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="relative overflow-hidden py-24">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-5xl px-4 md:px-6">
         <div className="mb-6 inline-flex items-center rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">
           AI Powered Marketing Platform
         </div>
 
-        <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
+        <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
           Marketing Analytics,
           <br />
-          SEO Content &
+          SEO Content &amp;
           <br />
           AI Automation
         </h1>
@@ -37,10 +37,22 @@ export default function Home() {
           </Link>
         </div>
 
+        <div className="mt-16 rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6">
+          <h2 className="mb-4 text-xl font-semibold">
+            O projektu
+          </h2>
+
+          <p className="text-zinc-400">
+            Tento projekt demonstruje vytvoření moderní marketingové platformy
+            postavené na Next.js 15. Obsahuje marketingový dashboard,
+            SEO optimalizovaný článek a AI asistenta využívajícího OpenAI API.
+          </p>
+        </div>
+
         <div className="mt-20 grid gap-6 md:grid-cols-3">
           <Link
             href="/dashboard"
-            className="group rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
+            className="group flex h-full flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
           >
             <div className="mb-4 text-3xl">📊</div>
 
@@ -55,7 +67,7 @@ export default function Home() {
 
           <Link
             href="/article"
-            className="group rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
+            className="group flex h-full flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
           >
             <div className="mb-4 text-3xl">📝</div>
 
@@ -70,7 +82,7 @@ export default function Home() {
 
           <Link
             href="/ai-assistant"
-            className="group rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
+            className="group flex h-full flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all hover:border-violet-500/50 hover:bg-zinc-900"
           >
             <div className="mb-4 text-3xl">🤖</div>
 

@@ -2,17 +2,17 @@ import ArticleContent from "@/components/article/ArticleContent";
 
 export default function ArticlePage() {
   return (
-    <article className="mx-auto max-w-4xl py-12">
+    <article className="mx-auto max-w-4xl px-4 py-12 md:px-6">
       <header className="mb-12">
         <span className="inline-flex rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1 text-sm font-medium text-violet-300">
           SEO & AI Marketing
         </span>
 
-        <h1 className="mt-5 text-5xl font-bold tracking-tight">
+        <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
           Jak využít umělou inteligenci v online marketingu v roce 2026
         </h1>
 
-        <div className="mt-4 flex items-center gap-4 text-sm text-zinc-500">
+        <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-zinc-500">
           <span>10. června 2026</span>
           <span>•</span>
           <span>5 min čtení</span>

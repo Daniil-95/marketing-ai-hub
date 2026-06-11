@@ -36,7 +36,7 @@ export default function GeneratedContent({
           Zde se zobrazí vygenerovaný obsah.
         </div>
       ) : (
-        <div className="rounded-xl bg-zinc-950 p-4 whitespace-pre-wrap text-zinc-300">
+        <div className="whitespace-pre-wrap rounded-xl bg-zinc-950 p-4 text-zinc-300">
           {content}
         </div>
       )}

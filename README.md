@@ -2,11 +2,11 @@
 
 Marketing AI Hub je moderní webová aplikace zaměřená na marketingovou analytiku, SEO obsah a využití umělé inteligence v digitálním marketingu.
 
-Projekt demonstruje práci s moderním frontend stackem, vizualizací dat, SEO optimalizací a integrací LLM modelů prostřednictvím OpenAI API.
+Projekt vznikl jako ukázka práce s moderním frontend stackem a demonstruje integraci AI nástrojů do marketingového workflow.
 
 ## Funkce
 
-### Marketing Dashboard
+### 📊 Marketing Dashboard
 
 Přehled klíčových marketingových metrik:
 
@@ -16,18 +16,22 @@ Přehled klíčových marketingových metrik:
 * Hodnota konverze
 * PNO
 
-Dashboard obsahuje KPI karty, grafy a tabulky pro rychlou orientaci ve výkonu marketingových kampaní.
+Dashboard obsahuje KPI karty, interaktivní grafy a přehledovou tabulku výsledků kampaní.
 
-### SEO článek
+### 📝 SEO Článek
 
-Ukázka tvorby SEO optimalizovaného obsahu se správnou strukturou:
+Ukázka SEO optimalizovaného obsahu na téma:
 
-* H1–H3 nadpisy
+**Jak využít umělou inteligenci v online marketingu v roce 2026**
+
+Součástí jsou:
+
+* správně strukturované nadpisy H1–H3
 * interní prolinkování
-* metadata pro SEO
-* uživatelsky přívětivý obsah
+* SEO metadata
+* přehledná obsahová struktura
 
-### AI Marketing Assistant
+### 🤖 AI Marketing Assistant
 
 Nástroj využívající OpenAI API pro generování marketingového obsahu.
 
@@ -39,11 +43,11 @@ Podporované výstupy:
 * Facebook Post
 * Blog Outline
 
-Součástí je také náhled generovaného promptu pro demonstraci prompt engineeringu.
+Součástí aplikace je také **Prompt Preview**, který zobrazuje prompt použitý při generování obsahu.
 
-## Použité technologie
+## Technologie
 
-* Next.js 15
+* Next.js
 * TypeScript
 * Tailwind CSS
 * Recharts
@@ -51,21 +55,35 @@ Součástí je také náhled generovaného promptu pro demonstraci prompt engine
 
 ## Lokální spuštění
 
+Instalace závislostí:
+
 ```bash
 npm install
+```
+
+Spuštění vývojového serveru:
+
+```bash
 npm run dev
 ```
 
-Aplikace bude dostupná na:
+Aplikace bude dostupná na adrese:
 
-```bash
+```text
 http://localhost:3000
 ```
 
-## Build
+## Build projektu
+
+Vytvoření produkčního buildu:
 
 ```bash
 npm run build
+```
+
+Spuštění produkční verze:
+
+```bash
 npm run start
 ```
 

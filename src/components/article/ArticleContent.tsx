@@ -108,14 +108,14 @@ export default function ArticleContent() {
         <div className="flex flex-wrap gap-4">
           <Link
             href="/dashboard"
-            className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-violet-500"
+            className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-violet-500 hover:bg-zinc-800"
           >
-            Marketingový Dashboard
+            Marketingový dashboard
           </Link>
 
           <Link
             href="/ai-assistant"
-            className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-violet-500"
+            className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-violet-500 hover:bg-zinc-800"
           >
             AI Marketing Assistant
           </Link>

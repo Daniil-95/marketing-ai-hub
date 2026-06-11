@@ -16,6 +16,8 @@ export default function AssistantPage() {
     outputType: string
   ) => {
     setLoading(true);
+    setGeneratedContent("");
+    setPromptPreview("");
 
     try {
       const response = await fetch("/api/generate", {
@@ -28,6 +30,10 @@ export default function AssistantPage() {
           outputType,
         }),
       });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate content");
+      }
 
       const data = await response.json();
 
@@ -45,13 +51,13 @@ export default function AssistantPage() {
   };
 
   return (
-    <section className="mx-auto max-w-5xl py-12">
+    <section className="mx-auto max-w-5xl px-4 py-12 md:px-6">
       <div className="mb-12">
         <span className="inline-flex rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1 text-sm font-medium text-violet-300">
           AI Content Generator
         </span>
 
-        <h1 className="mt-5 text-5xl font-bold tracking-tight">
+        <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
           AI Marketing Assistant
         </h1>
 

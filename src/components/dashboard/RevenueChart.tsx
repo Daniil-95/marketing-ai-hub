@@ -15,7 +15,10 @@ import { chartData } from "@/data/dashboard-data";
 
 export default function RevenueChart() {
   return (
-    <ResponsiveContainer width="100%" height={300}>
+    <ResponsiveContainer
+      width="100%"
+      height={300}
+    >
       <BarChart data={chartData}>
         <CartesianGrid
           stroke="#27272a"
@@ -33,6 +36,7 @@ export default function RevenueChart() {
           stroke="#a1a1aa"
           tickLine={false}
           axisLine={false}
+          width={40}
         />
 
         <Tooltip

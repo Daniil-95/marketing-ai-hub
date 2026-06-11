@@ -28,7 +28,10 @@ export default function KpiCard({
             : "bg-red-500/10 text-red-400"
         }`}
       >
-        <span>{isPositive ? "↗" : "↘"}</span>
+        <span aria-hidden="true">
+          {isPositive ? "↗" : "↘"}
+        </span>
+
         {change}
       </span>
     </div>

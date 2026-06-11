@@ -9,12 +9,12 @@ export default function Footer() {
 
           <p className="mt-2 text-sm text-zinc-400">
             Marketing analytics dashboard, SEO content platform
-            and AI-powered marketing assistant.
+            and AI-powered marketing assistant built with Next.js 15.
           </p>
         </div>
 
         <div className="text-sm text-zinc-500">
-          <p>Created by Daniil Andruško</p>
+          <p>Created by Daniil Andrushko</p>
           <p>© 2026</p>
         </div>
       </div>

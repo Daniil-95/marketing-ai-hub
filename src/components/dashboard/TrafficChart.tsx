@@ -14,7 +14,10 @@ import { chartData } from "@/data/dashboard-data";
 
 export default function TrafficChart() {
   return (
-    <ResponsiveContainer width="100%" height={350}>
+    <ResponsiveContainer
+      width="100%"
+      height={350}
+    >
       <LineChart
         data={chartData}
         margin={{
@@ -40,6 +43,7 @@ export default function TrafficChart() {
           stroke="#a1a1aa"
           tickLine={false}
           axisLine={false}
+          width={40}
         />
 
         <Tooltip
