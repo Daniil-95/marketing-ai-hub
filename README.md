@@ -4,6 +4,10 @@ Marketing AI Hub je moderní webová aplikace zaměřená na marketingovou analy
 
 Projekt vznikl jako ukázka práce s moderním frontend stackem a demonstruje integraci AI nástrojů do marketingového workflow.
 
+## Live Demo
+
+https://marketing-ai-hub-rho.vercel.app
+
 ## Funkce
 
 ### 📊 Marketing Dashboard
@@ -16,7 +20,7 @@ Přehled klíčových marketingových metrik:
 * Hodnota konverze
 * PNO
 
-Dashboard obsahuje KPI karty, interaktivní grafy a přehledovou tabulku výsledků kampaní.
+Dashboard obsahuje KPI karty, interaktivní grafy vytvořené pomocí Recharts a přehledovou tabulku výsledků marketingových kampaní.
 
 ### 📝 SEO Článek
 
@@ -27,7 +31,7 @@ Ukázka SEO optimalizovaného obsahu na téma:
 Součástí jsou:
 
 * správně strukturované nadpisy H1–H3
-* interní prolinkování
+* interní prolinkování mezi sekcemi aplikace
 * SEO metadata
 * přehledná obsahová struktura
 
@@ -47,11 +51,29 @@ Součástí aplikace je také **Prompt Preview**, který zobrazuje prompt použi
 
 ## Technologie
 
-* Next.js
+* Next.js 15
 * TypeScript
 * Tailwind CSS
 * Recharts
 * OpenAI API
+* ESLint
+* Vercel
+
+## Struktura projektu
+
+```text
+src/
+├── app/
+│   ├── dashboard/
+│   ├── article/
+│   ├── ai-assistant/
+│   └── layout.tsx
+│
+├── components/
+├── data/
+├── lib/
+└── types/
+```
 
 ## Lokální spuštění
 
@@ -89,8 +111,10 @@ npm run start
 
 ## Nasazení
 
-Projekt je připraven pro nasazení na platformě Vercel.
+Projekt je nasazen na platformě Vercel:
+
+https://marketing-ai-hub-rho.vercel.app
 
 ## Autor
 
-Daniil Andrushko
+**Daniil Andrushko**
